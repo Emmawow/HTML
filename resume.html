@@ -3,10 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Grupp 27 HTML-uppgift" />
-    <title>Grupp 27 Projektuppgift</title>
+    <meta name="description" content="Se mitt, Barbies, CV här!" />
+    <title>CV - Grupp 27 Projektuppgift</title>
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/script.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <a class="skip-link" href="#main">Hoppa till innehåll!</a>
+    <header>
+      <nav class="nav" aria-label="Huvudmeny">
+        <!-- Tillbaka-knapp el. huvudmeny här -->
+      </nav>
+    </header>
+
+    <main class="main" id="main">
+      <h1 class="main_title">Mitt CV</h1>
+      <button
+        class="main_button"
+        type="button"
+        data-js-action="print-resume"
+        data-js-target="resume-content"
+      >
+        Skriv ut CV
+      </button>
+      <!-- Oklart om detta ovan funkar -->
+      <section class="resume_section" aria-labelledby="experience-heading">
+        <h2 class="resume_heading" id="experience-heading">Erfarenhet</h2>
+        <article class="job" data-year="XXXX">
+          <h3 class="job_title">JOBBTITEL</h3>
+          <p class="job_meta">
+            <span class="job_company">FÖRETAG</span>,
+            <time class="job_date" datetime="XXXX">XXXX</time>
+          </p>
+          <ul class="job_tasks">
+            <li class="job_task">ARBETSUPPGIFT_X</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="resume_section" aria-labelledby="education-heading">
+        <h2 class="resume_heading" id="education-heading">Utbildning</h2>
+        <article class="education">
+          <h3 class="education_title">PROGRAM_KURS</h3>
+          <p class="education_meta">
+            <span class="education_school">SKOLA</span>,
+            <time class="education_date" datetime="XXXX">XXXX-XXXX</time>
+          </p>
+        </article>
+      </section>
+
+      <section class="resume_section" aria-labelledby="languages-heading">
+        <h2 class="resume_heading" id="languages-heading">Språk</h2>
+        <dl class="languages">
+          <!-- Dictionary list, kan ändras! -->
+          <dt class="languages_term">SPRÅK</dt>
+          <dd class="languages_desc">NIVÅ</dd>
+        </dl>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__text">
+        &copy; 2026 Barbara Millicent Roberts & Grupp 27
+      </p>
+    </footer>
+  </body>
 </html>
