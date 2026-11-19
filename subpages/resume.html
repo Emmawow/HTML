@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Se mitt, Barbies, CV här!" />
     <title>CV - Grupp 27 Projektuppgift</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <link rel="icon" href="../images/favicon.ico" type="x-icon" />
     <script src="js/script.js" defer></script>
   </head>
@@ -53,17 +53,83 @@
       </button>
       <!-- Ej kodat i JS, ska skriva ut nedan info genom PDF -->
 
+      <!-- Barbies headshot för CV:t -->
+      <img
+        class="resume__img"
+        src="../images/barbie-headshot.png"
+        alt="Huvudbild på Barbie"
+      />
       <!-- Jobblista -->
       <section class="resume__section" aria-labelledby="experience-heading">
         <h2 class="resume__heading" id="experience-heading">Erfarenhet</h2>
-        <article class="job" data-year="XXXX">
-          <h3 class="job__title">JOBBTITEL</h3>
+        <article class="job">
+          <h3 class="job__title">Astronaut</h3>
           <p class="job__meta">
-            <span class="job__company">FÖRETAG</span>,
-            <time class="job__date" datetime="XXXX">XXXX</time>
+            <span class="job__company">NASA, Houston</span>,
+            <time class="job__date" datetime="2026">2026</time>
           </p>
           <ul class="job__tasks">
-            <li class="job__task">ARBETSUPPGIFT_X</li>
+            <li class="job__task">Genomför rymdfärder och rymdpromenader</li>
+            <li class="job__task">
+              Utför vetenskapliga experiment ombord rymdstationen
+            </li>
+            <li class="job__task">
+              Håller event för att inspirera unga inom rymdteknik
+            </li>
+          </ul>
+        </article>
+
+        <article class="job">
+          <h3 class="job__title">Praktikant, rymdteknik</h3>
+          <p class="job__meta">
+            <span class="job__company">NASA Johnson Space Center, Houston</span
+            >, <time class="job__date" datetime="2024">2024</time>-<time
+              class="job__date"
+              datetime="2025"
+              >2025</time
+            >
+          </p>
+          <ul class="job__tasks">
+            <li class="job__task">
+              Arbetade med design och test av rymddräkter
+            </li>
+            <li class="job__task">Assisterade vid rymfärds-simuleringar</li>
+          </ul>
+        </article>
+
+        <article class="job">
+          <h3 class="job__title">Scenartist</h3>
+          <p class="job__meta">
+            <span class="job__company">Barbie and the Rockers, världsturné</span
+            >, <time class="job__date" datetime="2022">2022</time>-<time
+              class="job__date"
+              datetime="2024"
+              >2024</time
+            >
+          </p>
+          <ul class="job__tasks">
+            <li class="job__task">
+              Framförde sång, dans och skådespeleri inför stora publiker
+            </li>
+            <li class="job__task">Genomförde internationella turnéer</li>
+          </ul>
+        </article>
+
+        <article class="job">
+          <h3 class="job__title">Ridinstruktör</h3>
+          <p class="job__meta">
+            <span class="job__company">Malibu Riding Club, Kalifornien</span>,
+            <time class="job__date" datetime="2015">2015</time>-<time
+              class="job__date"
+              datetime="2021"
+              >2021</time
+            >
+          </p>
+          <ul class="job__tasks">
+            <li class="job__task">
+              Undervisade barn och vuxna i ridning och hästvård
+            </li>
+            <li class="job__task">Tränade hästar för hoppning och dressyr</li>
           </ul>
         </article>
       </section>
@@ -72,10 +138,38 @@
       <section class="resume__section" aria-labelledby="education-heading">
         <h2 class="resume__heading" id="education-heading">Utbildning</h2>
         <article class="education">
-          <h3 class="education__title">PROGRAM_KURS</h3>
+          <h3 class="education__title">Rymdteknik</h3>
           <p class="education__meta">
-            <span class="education__school">SKOLA</span>,
-            <time class="education__date" datetime="XXXX">XXXX-XXXX</time>
+            <span class="education__school">Harvard, Massachusetts</span>,
+            <time class="education__date" datetime="2022">2022</time>-<time
+              class="education__date"
+              datetime="2026"
+              >2026</time
+            >
+          </p>
+        </article>
+
+        <article class="education">
+          <h3 class="education__title">Scenkonst</h3>
+          <p class="education__meta">
+            <span class="education__school">Handler Arts Academy, New York</span
+            >, <time class="education__date" datetime="2021">2021</time>-<time
+              class="education__date"
+              datetime="2022"
+              >2022</time
+            >
+          </p>
+        </article>
+
+        <article class="education">
+          <h3 class="education__title">Ridar-utbildning</h3>
+          <p class="education__meta">
+            <span class="education__school">Alpine Riding Academy, Schweiz</span
+            >, <time class="education__date" datetime="2013">2013</time>-<time
+              class="education__date"
+              datetime="2014"
+              >2014</time
+            >
           </p>
         </article>
       </section>
@@ -85,8 +179,17 @@
         <h2 class="resume__heading" id="languages-heading">Språk</h2>
         <dl class="languages">
           <!-- Dictionary list, kan ändras! -->
-          <dt class="languages__term">SPRÅK</dt>
-          <dd class="languages__desc">NIVÅ</dd>
+          <dt class="languages__term">Engelska</dt>
+          <dd class="languages__desc">Modersmål</dd>
+
+          <dt class="languages__term">Franska</dt>
+          <dd class="languages__desc">Flytande</dd>
+
+          <dt class="languages__term">Tyska</dt>
+          <dd class="languages__desc">God nivå</dd>
+
+          <dt class="languages__term">Svenska</dt>
+          <dd class="languages__desc">God nivå</dd>
         </dl>
       </section>
     </main>
