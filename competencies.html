@@ -29,127 +29,130 @@
     </header>
 
     <main class="main" id="main">
-      <h1 class="main_title">Kompetenser</h1>
+      <h1 class="main__title">Kompetenser</h1>
 
       <section class="competencies">
-        <h2 class="competencies_heading">Vad kan Barbie?</h2>
-        <p class="competencies_intro">
+        <h2 class="competencies__heading">Vad kan Barbie?</h2>
+        <p class="competencies__intro">
           Jag har erfarenhet av en enorm bredd av yrkesområden, med över 250
           olika arbeten genom åren. Kika på några av dessa nedan!
         </p>
 
-        <!-- Tabell med kompetenser - sortera efter nivå, typ, filtrera efter typ? -->
-        <table class="competencies_table">
-          <caption class="competencies_table_caption">
+        <!-- Tabell med kompetenser - data-category inkodat om man senare
+         vill lägga till filtrering osv.  -->
+        <table class="competencies__table">
+          <caption class="competencies__table-caption">
             Mina kompetenser och färdighetsnivå
           </caption>
-          <thead class="competencies_table_head">
-            <tr class="competencies_table_row">
-              <th class="competencies_table_cell ctc_head" scope="col">
+          <thead class="competencies__table-head">
+            <tr class="competencies__table_row">
+              <th class="competencies__table-cell ctc-head" scope="col">
                 Kompetens
               </th>
-              <th class="competencies_table_cell ctc_head" scope="col">
+              <th class="competencies__table-cell ctc-head" scope="col">
                 Kategori
               </th>
-              <th class="competencies_table_cell ctc_head" scope="col">Nivå</th>
+              <th class="competencies__table-cell ctc-head" scope="col">
+                Nivå
+              </th>
             </tr>
           </thead>
-          <tbody class="competencies_table_body">
-            <!--Här skrivs alla olika kompetenser.-->
-            <tr class="competencies_table_row" data-category="soft">
-              <th class="competencies_table_cell ctc_rowhead" scope="row">
+          <tbody class="competencies__table-body">
+            <!--Här skrivs alla olika kompetenser -->
+            <tr class="competencies__table-row" data-category="soft">
+              <th class="competencies__table-cell ctc-rowhead" scope="row">
                 Drömförverkligande
               </th>
-              <td class="competencies_table_cell">Personlig</td>
-              <td class="competencies_table_cell">Expert</td>
+              <td class="competencies__table-cell">Personlig</td>
+              <td class="competencies__table-cell">Expert</td>
             </tr>
 
-            <tr class="competencies_table_row" data-category="soft">
-              <th class="competencies_table_cell ctc_rowhead" scope="row">
+            <tr class="competencies__table-row" data-category="soft">
+              <th class="competencies__table-cell ctc-rowhead" scope="row">
                 Anpassningsförmåga
               </th>
-              <td class="competencies_table_cell">Personlig</td>
-              <td class="competencies_table_cell">Expert</td>
+              <td class="competencies__table-cell">Personlig</td>
+              <td class="competencies__table-cell">Expert</td>
             </tr>
 
-            <tr class="competencies_table_row" data-category="soft">
-              <th class="competencies_table_cell ctc_rowhead" scope="row">
+            <tr class="competencies__table-row" data-category="soft">
+              <th class="competencies__table-cell ctc-rowhead" scope="row">
                 Mångsidighet
               </th>
-              <td class="competencies_table_cell">Personlig</td>
-              <td class="competencies_table_cell">Expert</td>
+              <td class="competencies__table-cell">Personlig</td>
+              <td class="competencies__table-cell">Expert</td>
             </tr>
 
-            <tr class="competencies_table_row" data-category="social">
-              <th class="competencies_table_cell ctc_rowhead" scope="row">
+            <tr class="competencies__table-row" data-category="social">
+              <th class="competencies__table-cell ctc-rowhead" scope="row">
                 Ledarskap
               </th>
-              <td class="competencies_table_cell">Social</td>
-              <td class="competencies_table_cell">Avancerad</td>
+              <td class="competencies__table-cell">Social</td>
+              <td class="competencies__table-cell">Avancerad</td>
             </tr>
 
-            <tr class="competencies_table_row" data-category="social">
-              <th class="competencies_table_cell ctc_rowhead" scope="row">
+            <tr class="competencies__table-row" data-category="social">
+              <th class="competencies__table-cell ctc-rowhead" scope="row">
                 Nätverkande
               </th>
-              <td class="competencies_table_cell">Social</td>
-              <td class="competencies_table_cell">Avancerad</td>
+              <td class="competencies__table-cell">Social</td>
+              <td class="competencies__table-cell">Avancerad</td>
             </tr>
 
-            <tr class="competencies_table_row" data-category="practical">
-              <th class="competencies_table_cell ctc_rowhead" scope="row">
+            <tr class="competencies__table-row" data-category="practical">
+              <th class="competencies__table-cell ctc-rowhead" scope="row">
                 Modedesign
               </th>
-              <td class="competencies_table_cell">Praktisk</td>
-              <td class="competencies_table_cell">Expert</td>
+              <td class="competencies__table-cell">Praktisk</td>
+              <td class="competencies__table-cell">Expert</td>
             </tr>
 
-            <tr class="competencies_table_row" data-category="practical">
-              <th class="competencies_table_cell ctc_rowhead" scope="row">
+            <tr class="competencies__table-row" data-category="practical">
+              <th class="competencies__table-cell ctc-rowhead" scope="row">
                 Rymdfart
               </th>
-              <td class="competencies_table_cell">Praktisk</td>
-              <td class="competencies_table_cell">Avancerad</td>
+              <td class="competencies__table-cell">Praktisk</td>
+              <td class="competencies__table-cell">Avancerad</td>
             </tr>
 
-            <tr class="competencies_table_row" data-category="practical">
-              <th class="competencies_table_cell ctc_rowhead" scope="row">
+            <tr class="competencies__table-row" data-category="practical">
+              <th class="competencies__table-cell ctc-rowhead" scope="row">
                 Medicin
               </th>
-              <td class="competencies_table_cell">Praktisk</td>
-              <td class="competencies_table_cell">Avancerad</td>
+              <td class="competencies__table-cell">Praktisk</td>
+              <td class="competencies__table-cell">Avancerad</td>
             </tr>
 
-            <tr class="competencies_table_row" data-category="practical">
-              <th class="competencies_table_cell ctc_rowhead" scope="row">
+            <tr class="competencies__table-row" data-category="practical">
+              <th class="competencies__table-cell ctc-rowhead" scope="row">
                 Programmering
               </th>
-              <td class="competencies_table_cell">Praktisk</td>
-              <td class="competencies_table_cell">Avancerad</td>
+              <td class="competencies__table-cell">Praktisk</td>
+              <td class="competencies__table-cell">Avancerad</td>
             </tr>
 
-            <tr class="competencies_table_row" data-category="practical">
-              <th class="competencies_table_cell ctc_rowhead" scope="row">
+            <tr class="competencies__table-row" data-category="practical">
+              <th class="competencies__table-cell ctc-rowhead" scope="row">
                 Entrepenörskap
               </th>
-              <td class="competencies_table_cell">Praktisk</td>
-              <td class="competencies_table_cell">Expert</td>
+              <td class="competencies__table-cell">Praktisk</td>
+              <td class="competencies__table-cell">Expert</td>
             </tr>
 
-            <tr class="competencies_table_row" data-category="practical">
-              <th class="competencies_table_cell ctc_rowhead" scope="row">
+            <tr class="competencies__table-row" data-category="practical">
+              <th class="competencies__table-cell ctc-rowhead" scope="row">
                 Scenkonst
               </th>
-              <td class="competencies_table_cell">Praktisk</td>
-              <td class="competencies_table_cell">Expert</td>
+              <td class="competencies__table-cell">Praktisk</td>
+              <td class="competencies__table-cell">Expert</td>
             </tr>
 
-            <tr class="competencies_table_row" data-category="social">
-              <th class="competencies_table_cell ctc_rowhead" scope="row">
+            <tr class="competencies__table-row" data-category="social">
+              <th class="competencies__table-cell ctc-rowhead" scope="row">
                 Trendsättning
               </th>
-              <td class="competencies_table_cell">Social</td>
-              <td class="competencies_table_cell">Expert</td>
+              <td class="competencies__table-cell">Social</td>
+              <td class="competencies__table-cell">Expert</td>
             </tr>
           </tbody>
         </table>

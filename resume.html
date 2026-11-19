@@ -26,47 +26,51 @@
     </header>
 
     <main class="main" id="main">
-      <h1 class="main_title">Mitt CV</h1>
+      <h1 class="main__title">Mitt CV</h1>
       <button
-        class="main_button"
+        class="main__button"
         type="button"
         data-js-action="print-resume"
         data-js-target="resume-content"
       >
         Skriv ut CV
       </button>
-      <!-- Oklart om detta ovan funkar -->
-      <section class="resume_section" aria-labelledby="experience-heading">
-        <h2 class="resume_heading" id="experience-heading">Erfarenhet</h2>
+      <!-- Ej kodat i JS, ska skriva ut nedan info genom PDF -->
+
+      <!-- Jobblista -->
+      <section class="resume__section" aria-labelledby="experience-heading">
+        <h2 class="resume__heading" id="experience-heading">Erfarenhet</h2>
         <article class="job" data-year="XXXX">
-          <h3 class="job_title">JOBBTITEL</h3>
-          <p class="job_meta">
-            <span class="job_company">FÖRETAG</span>,
-            <time class="job_date" datetime="XXXX">XXXX</time>
+          <h3 class="job__title">JOBBTITEL</h3>
+          <p class="job__meta">
+            <span class="job__company">FÖRETAG</span>,
+            <time class="job__date" datetime="XXXX">XXXX</time>
           </p>
-          <ul class="job_tasks">
-            <li class="job_task">ARBETSUPPGIFT_X</li>
+          <ul class="job__tasks">
+            <li class="job__task">ARBETSUPPGIFT_X</li>
           </ul>
         </article>
       </section>
 
-      <section class="resume_section" aria-labelledby="education-heading">
-        <h2 class="resume_heading" id="education-heading">Utbildning</h2>
+      <!-- Utbildnings-lista -->
+      <section class="resume__section" aria-labelledby="education-heading">
+        <h2 class="resume__heading" id="education-heading">Utbildning</h2>
         <article class="education">
-          <h3 class="education_title">PROGRAM_KURS</h3>
-          <p class="education_meta">
-            <span class="education_school">SKOLA</span>,
-            <time class="education_date" datetime="XXXX">XXXX-XXXX</time>
+          <h3 class="education__title">PROGRAM_KURS</h3>
+          <p class="education__meta">
+            <span class="education__school">SKOLA</span>,
+            <time class="education__date" datetime="XXXX">XXXX-XXXX</time>
           </p>
         </article>
       </section>
 
-      <section class="resume_section" aria-labelledby="languages-heading">
-        <h2 class="resume_heading" id="languages-heading">Språk</h2>
+      <!-- Språklista -->
+      <section class="resume__section" aria-labelledby="languages-heading">
+        <h2 class="resume__heading" id="languages-heading">Språk</h2>
         <dl class="languages">
           <!-- Dictionary list, kan ändras! -->
-          <dt class="languages_term">SPRÅK</dt>
-          <dd class="languages_desc">NIVÅ</dd>
+          <dt class="languages__term">SPRÅK</dt>
+          <dd class="languages__desc">NIVÅ</dd>
         </dl>
       </section>
     </main>
