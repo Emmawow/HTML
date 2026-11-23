@@ -13,7 +13,7 @@ $message = $_POST["message"];
     <meta name="description" content="Tack för ditt meddelande!" />
     <title>Kontaktbekräftelse</title>
     <link rel="stylesheet" href="../css/style.css" />
-    <link rel="icon" href="../images/favicon.ico" type="x-icon" />
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
     <script src="../js/script.js" defer></script>
   </head>
   <body>
