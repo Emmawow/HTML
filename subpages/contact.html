@@ -97,6 +97,21 @@
           </li>
         </ul>
       </div>
+      <div>
+        <h2 class="contact__subtitle">Lämna ett meddelande:</h2>
+        <form class="contact__form" id="kontaktform" action="tack.php" method="post">
+          <label for="name">Namn:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">E-post:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Meddelande:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit">Skicka meddelande</button>
+        </form>
+      </div>
       <footer class="footer">
         <p class="footer__text">
           &copy; 2026 Barbara Millicent Roberts & Grupp 27
