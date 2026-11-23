@@ -13,3 +13,41 @@
   max-width: 240px;
   height: auto;
 }
+
+/* - resume.html - */
+
+/* Formatterar bilder på resume-sidan */
+.resume__img {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin-top: 20px;
+}
+
+/* Formatterar spacing i utbildningslistan */
+.education__title {
+  margin: 0.25rem;
+}
+
+.education__meta {
+  margin-left: 40px;
+  margin-top: 0;
+}
+
+/* Justerar om dictionary-uppdelningen till en grid */
+.languages {
+  display: grid;
+  grid-template-columns: max-content max-content;
+}
+
+/* Ser till att termen blir fetstil */
+.languages__term {
+  font-weight: 600;
+}
+
+/* Lägger till bindestrecket och balanserar ut whitespace  */
+.languages__desc::before {
+  content: "-";
+  margin-right: 40px;
+}
