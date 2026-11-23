@@ -12,9 +12,9 @@ $message = $_POST["message"];
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Tack för ditt meddelande!" />
     <title>Kontaktbekräftelse</title>
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
-    <script src="../js/script.js" defer></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <script src="js/script.js" defer></script>
   </head>
   <body>
     <a class="skip__link" href="#main">Hoppa till innehåll!</a>
@@ -23,12 +23,13 @@ $message = $_POST["message"];
       <!--Huvudmeny-->
       <nav class="nav" aria-label="Huvudmeny">
         <ul class="nav__list">
-          <li class="nav__item"><a class="nav__link" href="../index-grupp27.html">Hem</a></li>
-          <li class="nav__item"><a class="nav__link" href="about-grupp27.html">Om mig</a></li>
-          <li class="nav__item"><a class="nav__link" href="competencies-grupp27.html">Kompetenser</a></li>
-          <li class="nav__item"><a class="nav__link" href="education-grupp27.html">Utbildning</a></li>
-          <li class="nav__item"><a class="nav__link" href="contact-grupp27.html">Kontakt</a></li>
-          <li class="nav__item"><a class="nav__link" href="resume-grupp27.html">CV</a></li>
+          <li class="nav__item"><a class="nav__link" href="index-grupp27.html">Hem</a></li>
+          <li class="nav__item"><a class="nav__link" href="subpages/about-grupp27.html">Om mig</a></li>
+          <li class="nav__item"><a class="nav__link" href="subpages/competencies-grupp27.html">Kompetenser</a></li>
+          <li class="nav__item"><a class="nav__link" href="subpages/projects-grupp27.html">Projekt</a>
+          <li class="nav__item"><a class="nav__link" href="subpages/education-grupp27.html">Utbildning</a></li>
+          <li class="nav__item"><a class="nav__link" href="subpages/contact-grupp27.html">Kontakt</a></li>
+          <li class="nav__item"><a class="nav__link" href="subpages/resume-grupp27.html">CV</a></li>
         </ul>
       </nav>
     </header>
