@@ -14,8 +14,8 @@ function printError($field, $error) {
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Bekräftelsemeddelande för kontaktformulär" />
-    <title>Kontaktbekräftelse</title>
+    <meta name="description" content="Bekräftelsemeddelande för kontaktformulär. Grupp 27 HTML-uppgift: Barbie Portfolio." />
+    <title>Kontaktbekräftelse - Grupp 27 Projektuppgift</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
     <script src="js/script.js" defer></script>
