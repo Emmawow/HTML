@@ -26,6 +26,7 @@
         </li>
         <li class="nav__item">
           <a class="nav__link" href="competencies-grupp27.html">Kompetenser</a>
+          </li>
         <li class="nav__item">
           <a class="nav__link" href="projects-grupp27.html">Projekt</a>
         </li>
@@ -78,16 +79,18 @@
         </li>
       </ul>
     </div>
-    <div class="contact__form">
+    <div class="contact__form-box">
       <h2 class="contact__subtitle">Lämna ett meddelande:</h2>
       <p>Alla fält är obligatoriska.</p>
       <form class="contact__form" id="kontaktform" action="../tack.php" method="post" data-js-action="submit-form">
         <!-- JS-krok -->
         <label for="name">Namn:</label>
         <input type="text" id="name" name="name" autocomplete="name" aria-describedby="name-error" required>
+        <p id="name-error" class="error" role="alert"></p>
 
-        <label for="email">E-post:</label>
+        <label for="email">E-post(t.ex. barbie@gmail.com):</label>
         <input type="email" id="email" name="email" autocomplete="email" aria-describedby="email-error" required>
+        <p id="email-error" class="error" role="alert"></p>
 
         <label for="subject">Vad vill du kontakta Barbie om?</label>
         <select id="subject" name="subject" required>
@@ -100,7 +103,7 @@
 
         <label for="message">Meddelande:</label>
         <textarea id="message" name="message" rows="4" aria-describedby="message-error" required></textarea>
-
+        <p id="message-error" class="error" role="alert"></p>
         <fieldset>
           <legend>Vill du ha svar från Barbie?</legend>
           <input type="radio" id="reply-yes" name="reply" value="yes" required>

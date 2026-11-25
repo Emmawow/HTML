@@ -38,13 +38,13 @@ function printError($field, $error) {
       </nav>
     </header>
     <main id="main" class="main">
-        <section class="contact-confirmation" aria-labelledby="form-confirmation-heading">
-            <h1 class="contact-confirmation__heading" id="form-confirmation-heading">Kontaktbekräftelse</h1>
+        <section class="contact__confirmation" aria-labelledby="form-confirmation-heading">
+            <h1 class="contact__confirmation__heading" id="form-confirmation-heading">Kontaktbekräftelse</h1>
             <?php if ($name === ''): ?>
                 <?php printError('name', 'Du måste fylla i ditt namn!'); ?>
                 <p><a href="subpages/contact-grupp27.html">Tillbaka till kontaktformuläret</a></p>
-            <?php elseif ($email === ''): ?>
-                <?php printError('email', 'Du måste fylla i din e-postadress!'); ?>
+            <?php elseif ($email === ''|| !filter_var($email, FILTER_VALIDATE_EMAIL)): ?>
+                <?php printError('email', 'Du måste fylla i en giltig e-postadress!'); ?>
                 <p><a href="subpages/contact-grupp27.html">Tillbaka till kontaktformuläret</a></p>
             <?php elseif ($message === ''): ?>
                 <?php printError('message', 'Du måste fylla i ett meddelande!'); ?>

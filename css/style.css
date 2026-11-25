@@ -80,6 +80,8 @@
 }
 .contact__form {
 }
+.contact__form-box {
+}
 .contact__form-message {
 }
 .contact__group {
@@ -189,4 +191,9 @@
   margin-top: 20px;
 }
 .resume__section {
+}
+/* TACK */
+.contact__confirmation {
+}
+.contact__confirmation__heading {
 }
