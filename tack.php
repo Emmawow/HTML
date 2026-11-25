@@ -42,15 +42,15 @@ function printError($field, $error) {
             <h1 class="contact__confirmation__heading" id="form-confirmation-heading">Kontaktbekräftelse</h1>
             <?php if ($name === ''): ?>
                 <?php printError('name', 'Du måste fylla i ditt namn!'); ?>
-                <p><a href="subpages/contact-grupp27.html">Tillbaka till kontaktformuläret</a></p>
+                <p><a href="subpages/contact-grupp27.html">Går tillbaka till kontaktformuläret.</a></p>
             <?php elseif ($email === ''|| !filter_var($email, FILTER_VALIDATE_EMAIL)): ?>
                 <?php printError('email', 'Du måste fylla i en giltig e-postadress!'); ?>
-                <p><a href="subpages/contact-grupp27.html">Tillbaka till kontaktformuläret</a></p>
+                <p><a href="subpages/contact-grupp27.html">Går tillbaka till kontaktformuläret.</a></p>
             <?php elseif ($message === ''): ?>
                 <?php printError('message', 'Du måste fylla i ett meddelande!'); ?>
-                <p><a href="subpages/contact-grupp27.html">Tillbaka till kontaktformuläret</a></p>
+                <p><a href="subpages/contact-grupp27.html">Går tillbaka till kontaktformuläret.</a></p>
             <?php else: ?>
-                <p>Tack för ditt meddelande! Jag återkommer till dig så snart som möjligt.</p>
+                <p>Tack så jätte mycket för ditt meddelande! Jag återkommer till dig så snart som möjligt med ett svar på ditt meddelande. Tyvärr så får jag väldigt många meddelanden just nu vilket gör att det tar längre tid att svara. Förväntad svarstid: inte inom din livstid. Jag hoppas att du har det så bra så länge, ha en fortsatt trevlig dag! Hälsningar, Barbie.</p>
                 <p>Namn: <?php echo htmlspecialchars($name, ENT_QUOTES, 'UTF-8'); ?></p>
                 <p>E-post: <?php echo htmlspecialchars($email, ENT_QUOTES, 'UTF-8'); ?></p>
                 <p>Meddelande: <?php echo htmlspecialchars($message, ENT_QUOTES, 'UTF-8'); ?></p>
