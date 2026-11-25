@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Här kan du kontakta Barbie! Grupp 27 HTML-uppgift: Barbie Portfolio.>
+  <meta name="description" content="På den här sidan kan du kontakta Barbie! Grupp 27 HTML-uppgift: Barbie Portfolio.">
   <title>Kontakt - Grupp 27 Projektuppgift</title>
   <link rel="stylesheet" href="../css/style.css">
   <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
@@ -85,11 +85,11 @@
       <form class="contact__form" id="kontaktform" action="../tack.php" method="post" data-js-action="submit-form">
         <!-- JS-krok -->
         <label for="name">Namn:</label>
-        <input type="text" id="name" name="name" autocomplete="name" aria-describedby="name-error" required>
+        <input type="text" id="name" name="name" autocomplete="name" placeholder="Ditt namn" aria-describedby="name-error" required>
         <p id="name-error" class="error" role="alert"></p>
 
         <label for="email">E-post(t.ex. barbie@gmail.com):</label>
-        <input type="email" id="email" name="email" autocomplete="email" aria-describedby="email-error" required>
+        <input type="email" id="email" name="email" autocomplete="email" placeholder="exempel@domän.se" aria-describedby="email-error" required>
         <p id="email-error" class="error" role="alert"></p>
 
         <label for="subject">Vad vill du kontakta Barbie om?</label>
@@ -102,7 +102,7 @@
         </select>
 
         <label for="message">Meddelande:</label>
-        <textarea id="message" name="message" rows="4" aria-describedby="message-error" required></textarea>
+        <textarea id="message" name="message" rows="4" placeholder="Skriv ditt meddelande här..." aria-describedby="message-error" required></textarea>
         <p id="message-error" class="error" role="alert"></p>
         <fieldset>
           <legend>Vill du ha svar från Barbie?</legend>
