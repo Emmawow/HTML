@@ -1,180 +1,213 @@
 <!doctype html>
 <html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Se mitt, Barbies, CV här! Grupp 27 HTML-uppgift: Barbie Portfolio."
+    />
+    <title>CV - Grupp 27 HTML-uppgift: Barbies Portfolio.</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
+    <script src="../js/script.js" defer></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Se mitt, Barbies, CV här!">
-  <title>CV - Grupp 27 Projektuppgift</title>
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
-  <script src="../js/script.js" defer></script>
-</head>
+  <body>
+    <a class="skip__link" href="#main">Hoppa till innehåll!</a>
 
-<body>
-  <a class="skip__link" href="#main">Hoppa till innehåll!</a>
+    <header class="header">
+      <!--Huvudmeny-->
+      <nav class="nav" aria-label="Huvudmeny">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="../index-grupp27.html">Hem</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="about-grupp27.html">Om mig</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="competencies-grupp27.html"
+              >Kompetenser</a
+            >
+          </li>
 
-  <header class="header">
-    <!--Huvudmeny-->
-    <nav class="nav" aria-label="Huvudmeny">
-      <ul class="nav__list">
-        <li class="nav__item">
-          <a class="nav__link" href="../index-grupp27.html">Hem</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="about-grupp27.html">Om mig</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="competencies-grupp27.html">Kompetenser</a>
-        <li class="nav__item">
-          <a class="nav__link" href="projects-grupp27.html">Projekt</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="education-grupp27.html">Utbildning</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="contact-grupp27.html">Kontakt</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="resume-grupp27.html">CV</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+          <li class="nav__item">
+            <a class="nav__link" href="projects-grupp27.html">Projekt</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="education-grupp27.html">Utbildning</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="contact-grupp27.html">Kontakt</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="resume-grupp27.html">CV</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-  <main class="main" id="main">
-    <!-- Ej kodat i JS, ska skriva ut nedan info genom PDF -->
-    <button class="resume__button" type="button" data-js-action="print-resume">
-      Skriv ut CV
-    </button>
-    <!-- Skriver ut konfirmationen när det är utskrivet (i teorin) -->
-    <p data-js-target="resume-confirmation" role="status"></p>
+    <main class="main" id="main">
+      <!-- Ej kodat i JS, ska skriva ut nedan info genom PDF -->
+      <button
+        class="resume__button"
+        type="button"
+        data-js-action="print-resume"
+      >
+        Skriv ut CV
+      </button>
+      <!-- Skriver ut konfirmationen när det är utskrivet (i teorin) -->
+      <p data-js-target="resume-confirmation" role="status"></p>
 
-    <!-- Allt inom resume section blir datan i resume-content -->
-    <section class="resume" data-js-target="resume-content">
-      <h1 class="main__title">Mitt CV</h1>
-      <!-- Barbies headshot för CV:t -->
-      <img class="resume__img" src="../images/barbie-headshot.png" alt="Huvudbild på Barbie">
-      <!-- Jobblista -->
-      <section class="resume__section" aria-labelledby="experience-heading">
-        <h2 class="resume__heading" id="experience-heading">Erfarenhet</h2>
-        <article class="job">
-          <h3 class="job__title">Astronaut</h3>
-          <p class="job__meta">
-            <span class="job__company">NASA, Houston</span>,
-            <time class="job__date" datetime="2026">2026</time>
-          </p>
-          <ul class="job__tasks">
-            <li class="job__task">Genomför rymdfärder och rymdpromenader</li>
-            <li class="job__task">
-              Utför vetenskapliga experiment ombord rymdstationen
-            </li>
-            <li class="job__task">
-              Håller event för att inspirera unga inom rymdteknik
-            </li>
-          </ul>
-        </article>
+      <!-- Allt inom resume section blir datan i resume-content -->
+      <section class="resume" data-js-target="resume-content">
+        <h1 class="main__title">Mitt CV || Grupp 27 HTMl-uppgift</h1>
+        <!-- Barbies headshot för CV:t -->
+        <img
+          class="resume__img"
+          src="../images/barbie-headshot.png"
+          alt="Huvudbild på Barbie"
+        />
+        <!-- Jobblista -->
+        <section class="resume__section" aria-labelledby="experience-heading">
+          <h2 class="resume__heading" id="experience-heading">Erfarenhet</h2>
+          <article class="job">
+            <h3 class="job__title">Astronaut</h3>
+            <p class="job__meta">
+              <span class="job__company">NASA, Houston</span>,
+              <time class="job__date" datetime="2026">2026</time>
+            </p>
+            <ul class="job__tasks">
+              <li class="job__task">Genomför rymdfärder och rymdpromenader</li>
+              <li class="job__task">
+                Utför vetenskapliga experiment ombord rymdstationen
+              </li>
+              <li class="job__task">
+                Håller event för att inspirera unga inom rymdteknik
+              </li>
+            </ul>
+          </article>
 
-        <article class="job">
-          <h3 class="job__title">Praktikant, rymdteknik</h3>
-          <p class="job__meta">
-            <span class="job__company">NASA Johnson Space Center, Houston</span>, <time class="job__date"
-              datetime="2024">2024</time>-<time class="job__date" datetime="2025">2025</time>
-          </p>
-          <ul class="job__tasks">
-            <li class="job__task">
-              Arbetade med design och test av rymddräkter
-            </li>
-            <li class="job__task">Assisterade vid rymdfärds-simuleringar</li>
-          </ul>
-        </article>
+          <article class="job">
+            <h3 class="job__title">Praktikant, rymdteknik</h3>
+            <p class="job__meta">
+              <span class="job__company"
+                >NASA Johnson Space Center, Houston</span
+              >, <time class="job__date" datetime="2024">2024</time>-<time
+                class="job__date"
+                datetime="2025"
+                >2025</time
+              >
+            </p>
+            <ul class="job__tasks">
+              <li class="job__task">
+                Arbetade med design och test av rymddräkter
+              </li>
+              <li class="job__task">Assisterade vid rymdfärds-simuleringar</li>
+            </ul>
+          </article>
 
-        <article class="job">
-          <h3 class="job__title">Scenartist</h3>
-          <p class="job__meta">
-            <span class="job__company">Barbie and the Rockers, världsturné</span>, <time class="job__date"
-              datetime="2022">2022</time>-<time class="job__date" datetime="2024">2024</time>
-          </p>
-          <ul class="job__tasks">
-            <li class="job__task">
-              Framförde sång, dans och skådespeleri inför stora publiker
-            </li>
-            <li class="job__task">Genomförde internationella turnéer</li>
-          </ul>
-        </article>
+          <article class="job">
+            <h3 class="job__title">Scenartist</h3>
+            <p class="job__meta">
+              <span class="job__company"
+                >Barbie and the Rockers, världsturné</span
+              >, <time class="job__date" datetime="2022">2022</time>-<time
+                class="job__date"
+                datetime="2024"
+                >2024</time
+              >
+            </p>
+            <ul class="job__tasks">
+              <li class="job__task">
+                Framförde sång, dans och skådespeleri inför stora publiker
+              </li>
+              <li class="job__task">Genomförde internationella turnéer</li>
+            </ul>
+          </article>
 
-        <article class="job">
-          <h3 class="job__title">Ridinstruktör</h3>
-          <p class="job__meta">
-            <span class="job__company">Malibu Riding Club, Kalifornien</span>,
-            <time class="job__date" datetime="2015">2015</time>-<time class="job__date" datetime="2021">2021</time>
-          </p>
-          <ul class="job__tasks">
-            <li class="job__task">
-              Undervisade barn och vuxna i ridning och hästvård
-            </li>
-            <li class="job__task">Tränade hästar för hoppning och dressyr</li>
-          </ul>
-        </article>
+          <article class="job">
+            <h3 class="job__title">Ridinstruktör</h3>
+            <p class="job__meta">
+              <span class="job__company">Malibu Riding Club, Kalifornien</span>,
+              <time class="job__date" datetime="2015">2015</time>-<time
+                class="job__date"
+                datetime="2021"
+                >2021</time
+              >
+            </p>
+            <ul class="job__tasks">
+              <li class="job__task">
+                Undervisade barn och vuxna i ridning och hästvård
+              </li>
+              <li class="job__task">Tränade hästar för hoppning och dressyr</li>
+            </ul>
+          </article>
+        </section>
+
+        <!-- Utbildnings-lista -->
+        <section class="resume__section" aria-labelledby="education-heading">
+          <h2 class="resume__heading" id="education-heading">Utbildning</h2>
+          <article class="resume__education">
+            <h3 class="resume__education-title">Rymdteknik</h3>
+            <p class="resume__education-meta">
+              <span class="resume__education-school"
+                >Harvard, Massachusetts</span
+              >,
+              <time class="resume__education-date" datetime="2022">2022</time
+              >-<time class="resume__education-date" datetime="2026">2026</time>
+            </p>
+          </article>
+
+          <article class="resume__education">
+            <h3 class="resume__education-title">Scenkonst</h3>
+            <p class="resume__education-meta">
+              <span class="resume__education-school"
+                >Handler Arts Academy, New York</span
+              >,
+              <time class="resume__education-date" datetime="2021">2021</time
+              >-<time class="resume__education-date" datetime="2022">2022</time>
+            </p>
+          </article>
+
+          <article class="resume__education">
+            <h3 class="resume__education-title">Ridutbildning</h3>
+            <p class="resume__education-meta">
+              <span class="resume__education-school"
+                >Alpine Riding Academy, Schweiz</span
+              >,
+              <time class="resume__education-date" datetime="2013">2013</time
+              >-<time class="resume__education-date" datetime="2014">2014</time>
+            </p>
+          </article>
+        </section>
+
+        <!-- Språklista -->
+        <section class="resume__section" aria-labelledby="languages-heading">
+          <h2 class="resume__heading" id="languages-heading">Språk</h2>
+          <dl class="languages">
+            <!-- Dictionary list, kan ändras! -->
+            <dt class="languages__term">Engelska</dt>
+            <dd class="languages__desc">Modersmål</dd>
+
+            <dt class="languages__term">Franska</dt>
+            <dd class="languages__desc">Flytande</dd>
+
+            <dt class="languages__term">Tyska</dt>
+            <dd class="languages__desc">God nivå</dd>
+
+            <dt class="languages__term">Svenska</dt>
+            <dd class="languages__desc">God nivå</dd>
+          </dl>
+        </section>
       </section>
+    </main>
 
-      <!-- Utbildnings-lista -->
-      <section class="resume__section" aria-labelledby="education-heading">
-        <h2 class="resume__heading" id="education-heading">Utbildning</h2>
-        <article class="resume__education">
-          <h3 class="resume__education-title">Rymdteknik</h3>
-          <p class="resume__education-meta">
-            <span class="resume__education-school">Harvard, Massachusetts</span>,
-            <time class="resume__education-date" datetime="2022">2022</time>-<time class="resume__education-date"
-              datetime="2026">2026</time>
-          </p>
-        </article>
-
-        <article class="resume__education">
-          <h3 class="resume__education-title">Scenkonst</h3>
-          <p class="resume__education-meta">
-            <span class="resume__education-school">Handler Arts Academy, New York</span>,
-            <time class="resume__education-date" datetime="2021">2021</time>-<time class="resume__education-date"
-              datetime="2022">2022</time>
-          </p>
-        </article>
-
-        <article class="resume__education">
-          <h3 class="resume__education-title">Ridutbildning</h3>
-          <p class="resume__education-meta">
-            <span class="resume__education-school">Alpine Riding Academy, Schweiz</span>,
-            <time class="resume__education-date" datetime="2013">2013</time>-<time class="resume__education-date"
-              datetime="2014">2014</time>
-          </p>
-        </article>
-      </section>
-
-      <!-- Språklista -->
-      <section class="resume__section" aria-labelledby="languages-heading">
-        <h2 class="resume__heading" id="languages-heading">Språk</h2>
-        <dl class="languages">
-          <!-- Dictionary list, kan ändras! -->
-          <dt class="languages__term">Engelska</dt>
-          <dd class="languages__desc">Modersmål</dd>
-
-          <dt class="languages__term">Franska</dt>
-          <dd class="languages__desc">Flytande</dd>
-
-          <dt class="languages__term">Tyska</dt>
-          <dd class="languages__desc">God nivå</dd>
-
-          <dt class="languages__term">Svenska</dt>
-          <dd class="languages__desc">God nivå</dd>
-        </dl>
-      </section>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <p class="footer__text">
-      &copy; 2026 Barbara Millicent Roberts & Grupp 27
-    </p>
-  </footer>
-</body>
-
+    <footer class="footer">
+      <p class="footer__text">
+        &copy; 2026 Barbara Millicent Roberts & Grupp 27
+      </p>
+    </footer>
+  </body>
 </html>
