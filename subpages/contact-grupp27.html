@@ -1,44 +1,46 @@
 <!doctype html>
 <html lang="sv">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Här kan du kontakta Barbie!" />
-    <title>Kontakt - Grupp 27 Projektuppgift</title>
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="icon" href="../images/favicon.ico" type="x-icon" />
-    <script src="js/script.js" defer></script>
-  </head>
-  <body>
-    <a class="skip-link" href="#main">Hoppa till innehåll!</a>
 
-    <header class="header">
-      <!--Huvudmeny-->
-      <nav class="nav" aria-label="Huvudmeny">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a class="nav__link" href="../index-grupp27.html">Hem</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="about-grupp27.html">Om mig</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="competencies-grupp27.html"
-              >Kompetenser</a
-            >
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="projects-grupp27.html">Projekt</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="education-grupp27.html">Utbildning</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="resume-grupp27.html">CV</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Här kan du kontakta Barbie!">
+  <title>Kontakt - Grupp 27 Projektuppgift</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+  <script src="../js/script.js" defer></script>
+</head>
+
+<body>
+  <a class="skip__link" href="#main">Hoppa till innehåll!</a>
+
+  <header class="header">
+    <!--Huvudmeny-->
+    <nav class="nav" aria-label="Huvudmeny">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="../index-grupp27.html">Hem</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="about-grupp27.html">Om mig</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="competencies-grupp27.html">Kompetenser</a>
+        <li class="nav__item">
+          <a class="nav__link" href="projects-grupp27.html">Projekt</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="education-grupp27.html">Utbildning</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="contact-grupp27.html">Kontakt</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="resume-grupp27.html">CV</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
     <main class="main" id="main">
       <h1 class="main__title">Kontakta mig</h1>
@@ -115,6 +117,49 @@
             autocomplete="name"
             required
           />
+  <main class="main" id="main">
+    <h1 class="main__title">Kontakta mig</h1>
+    <div class="contact__manager">
+      <h2 class="contact__mattel">Kontakta manager:</h2>
+      <ul class="contact__list">
+        <li class="contact__list-item">
+          <a class="contact__link contact__link-email"
+            href="mailto:mattell@gmail.com?subject=Om%20Barbie&body=Detta%20mail%20är%20om%20Barbie.">Mattel E-post</a>
+        </li>
+        <li class="contact__list-item">
+          <a class="contact__link contact__link__linkedin" href="https://www.linkedin.com/company/mattel/"
+            target="_blank" rel="noopener noreferrer">Mattel Linkedin</a>
+        </li>
+      </ul>
+    </div>
+    <div class="contact__group">
+      <h2 class="contact__subtitle">Vid annat, kontakta mig direkt:</h2>
+      <ul class="contact__list">
+        <li class="contact__list-item">
+          <a class="contact__link contact__link__email"
+            href="mailto:barbie@gmail.com?subject=Mail%20till%20barbie&body=Hej%20Barbie!">Min E-post</a>
+        </li>
+        <li class="contact__list-item">
+          <a class="contact__link contact__link-instagram" href="https://instagram.com/barbie/" target="_blank"
+            rel="noopener noreferrer">
+            Min instagram</a>
+        </li>
+        <li class="contact__list-item">
+          <a class="contact__link contact__link__facebook" href="https://facebook.com/barbie/" target="_blank"
+            rel="noopener noreferrer">Min Facebook</a>
+        </li>
+        <li class="contact__list-item">
+          <a href="+46701234567">070-123 45 67</a>
+        </li>
+      </ul>
+    </div>
+    <div class="contact__form">
+      <h2 class="contact__subtitle">Lämna ett meddelande:</h2>
+      <p>Alla fält är obligatoriska.</p>
+      <form class="contact__form" id="kontaktform" action="../tack.php" method="post" data-js-action="submit-form">
+        <!-- JS-krok -->
+        <label for="name">Namn:</label>
+        <input type="text" id="name" name="name" autocomplete="name" required>
 
           <label for="email">E-post:</label>
           <input
@@ -124,24 +169,43 @@
             autocomplete="email"
             required
           />
+        <label for="email">E-post:</label>
+        <input type="email" id="email" name="email" autocomplete="email" required>
 
-          <label for="message">Meddelande:</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
+        <label for="subject">Vad vill du kontakta Barbie om?</label>
+        <select id="subject" name="subject" required>
+          <option value="">Välj ett ämne</option>
+          <option value="question">Jag har en fråga</option>
+          <option value="feedback">Jag vill ge feedback</option>
+          <option value="greeting">Jag vill bara säga hej!</option>
+          <option value="other">Annat</option>
+        </select>
 
-          <button type="submit">Skicka meddelande</button>
-          <!-- JS-krok -->
-          <p
-            data-js-target="form-message"
-            class="contact__form-message"
-            aria-live="polite"
-          ></p>
-        </form>
-      </div>
-    </main>
-    <footer class="footer">
-      <p class="footer__text">
-        &copy; 2026 Barbara Millicent Roberts & Grupp 27
-      </p>
-    </footer>
-  </body>
+        <label for="message">Meddelande:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <fieldset>
+          <legend>Vill du ha svar från Barbie?</legend>
+          <input type="radio" id="reply-yes" name="reply" value="yes" required>
+          <label for="reply-yes">Ja</label>
+
+          <input type="radio" id="reply-no" name="reply" value="no" required>
+          <label for="reply-no">Nej, tack</label>
+        </fieldset>
+
+        <button class="contact__button" type="submit">
+          Skicka meddelande
+        </button>
+        <!-- JS-krok -->
+        <p data-js-target="form-message" class="contact__form-message" role="status"></p>
+      </form>
+    </div>
+  </main>
+  <footer class="footer">
+    <p class="footer__text">
+      &copy; 2026 Barbara Millicent Roberts & Grupp 27
+    </p>
+  </footer>
+</body>
+
 </html>

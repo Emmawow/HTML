@@ -1,22 +1,186 @@
-.about__img {
-  width: 100%;
-  max-width: 240px;
-  height: auto;
+/* ------------------------------------ INFO ------------------------------------ */
+/* CSS är ordnad inom respektive kategorier i alfabetisk ordning. Ha kvar det så! */
+
+/* GENERAL */
+.skip__link {
 }
-.experience__img {
-  width: 100%;
-  max-width: 240px;
-  height: auto;
+.header {
+}
+.nav {
+}
+.nav__item {
+}
+.nav__link {
+}
+.nav__list {
+}
+.main {
+}
+.main__button-link {
 }
 .main__img {
   width: 100%;
   max-width: 240px;
   height: auto;
 }
+.main__title {
+}
+.main__subtitle {
+}
+.footer {
+}
+.footer__text {
+}
 
-/* - resume.html - */
+/* INDEX */
+.index__button {
+}
+.index__button-link {
+}
 
-/* Formatterar bilder på resume-sidan */
+/* ABOUT */
+.about {
+}
+.about__title {
+}
+.about__text {
+}
+.about__img {
+  width: 100%;
+  max-width: 240px;
+  height: auto;
+}
+
+/* COMPETENCIES */
+.competencies {
+}
+.competencies__heading {
+}
+.competencies__intro {
+}
+.competencies__table {
+}
+.competencies__table-body {
+}
+.competencies__table-caption {
+}
+.competencies__table-cell {
+}
+.competencies__table-cellhead {
+}
+.competencies__table-head {
+}
+.competencies__table-row {
+}
+.competencies__table-rowhead {
+}
+
+/* CONTACT */
+.contact__button {
+}
+.contact__form {
+}
+.contact__form-message {
+}
+.contact__group {
+}
+.contact__link {
+}
+.contact__link-email {
+}
+.contact__link-facebook {
+}
+.contact__link-instagram {
+}
+.contact__link-linkedin {
+}
+.contact__list {
+}
+.contact__list-item {
+}
+.contact__manager {
+}
+.contact__mattel {
+}
+.contact__subtitle {
+}
+.contact__text {
+}
+
+/* EDUCATION */
+.education {
+}
+.education__item {
+}
+.education__school {
+}
+.education__period {
+}
+.education__description {
+}
+.education__img {
+  width: 100%;
+  max-width: 240px;
+  height: auto;
+}
+
+/* PROJECTS */
+.projects {
+}
+.project {
+}
+.project__title {
+}
+.project__text {
+}
+
+/* RESUME */
+.job {
+}
+.job__company {
+}
+.job__date {
+}
+.job__meta {
+}
+.job__task {
+}
+.job__tasks {
+}
+.job__title {
+}
+.languages {
+  display: grid;
+  grid-template-columns: max-content max-content;
+}
+.languages__desc {
+}
+.languages__desc::before {
+  content: "-";
+  margin-right: 40px;
+}
+.languages__term {
+  font-weight: 600;
+}
+.resume {
+}
+.resume__button {
+}
+.resume__education {
+}
+.resume__education-date {
+}
+.resume__education-meta {
+  margin-left: 40px;
+  margin-top: 0;
+}
+.resume__education-school {
+}
+.resume__education-title {
+  margin: 0.25rem;
+}
+.resume__heading {
+}
 .resume__img {
   display: block;
   width: 100%;
@@ -24,30 +188,5 @@
   height: auto;
   margin-top: 20px;
 }
-
-/* Formatterar spacing i utbildningslistan */
-.education__title {
-  margin: 0.25rem;
-}
-
-.education__meta {
-  margin-left: 40px;
-  margin-top: 0;
-}
-
-/* Justerar om dictionary-uppdelningen till en grid */
-.languages {
-  display: grid;
-  grid-template-columns: max-content max-content;
-}
-
-/* Ser till att termen blir fetstil */
-.languages__term {
-  font-weight: 600;
-}
-
-/* Lägger till bindestrecket och balanserar ut whitespace  */
-.languages__desc::before {
-  content: "-";
-  margin-right: 40px;
+.resume__section {
 }

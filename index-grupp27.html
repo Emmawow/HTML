@@ -18,73 +18,120 @@
       <!--Ändra med CSS så bilden är i mitten av sidan, "Barbie Portfolio" som rubrik och alla knappval horiasontellt med snygg styling-->
       <h1 class="main__title">Barbies Portfolio</h1>
 
-      <!--Om Mig-->
-      <h2 class="main__subtitle">Om mig</h2>
-      <button class="main__button">
-        <a
-          class="main__button-link"
-          href="subpages/about-grupp27.html"
-          alt="Om mig"
-        >
-          Om mig</a
-        >
-      </button>
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          name="description"
+          content="Välkommen till grupp 27:s HTML-uppgift! På denna sida finner ni Barbies portfolio."
+        />
+        <title>Hem - Grupp 27 Projektuppgift</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+        <script src="js/script.js" defer></script>
+      </head>
 
-      <!--Kompetenser-->
-      <h2 class="main__subtitle">Kompetenser</h2>
-      <button class="main__button">
-        <a
-          class="main__button-link"
-          href="subpages/competencies-grupp27.html"
-          alt="Kompetenser"
-          >Kompetenser</a
-        >
-      </button>
+      <body>
+        <a class="skip__link" href="#main">Hoppa till innehåll!</a>
 
-      <!--Projekt-->
-      <h2 class="main__subtitle">Projekt</h2>
-      <button class="main__button">
-        <a
-          class="main__button-link"
-          href="subpages/projects-grupp27.html"
-          alt="Projekt"
-          >Projekt</a
-        >
-      </button>
+        <header class="header">
+          <!--Huvudmeny-->
+          <nav class="nav" aria-label="Huvudmeny">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="index-grupp27.html">Hem</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="subpages/about-grupp27.html"
+                  >Om mig</a
+                >
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="subpages/competencies-grupp27.html"
+                  >Kompetenser</a
+                >
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="subpages/projects-grupp27.html"
+                  >Projekt</a
+                >
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="subpages/education-grupp27.html"
+                  >Utbildning</a
+                >
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="subpages/contact-grupp27.html"
+                  >Kontakt</a
+                >
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="subpages/resume-grupp27.html">CV</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <main class="main" id="main">
+          <img
+            class="main__img"
+            src="images/Logo_barbie.png"
+            alt="Barbies Logga"
+          />
+          <!--Ändra med CSS så bilden är i mitten av sidan, "Barbie Portfolio" som rubrik och alla knappval horiasontellt med snygg styling-->
+          <!-- Sätta loggan med i headern? -->
+          <h1 class="main__title">Barbies Portfolio</h1>
 
-      <!--Utbilgning-->
-      <h2 class="main__subtitle">Utbildning och erfarenhet</h2>
-      <button class="main__button">
-        <a
-          class="main__button-link"
-          href="subpages/education-grupp27.html"
-          alt="Utbildning och erfarenhet"
-          >Utbildning</a
-        >
-      </button>
+          <!--Om Mig-->
+          <h2 class="main__subtitle">Om mig</h2>
+          <a class="index__link" href="subpages/about-grupp27.html">Om mig</a>
 
-      <!--Kontakt-->
-      <h2 class="main__subtitle">Kontakt</h2>
-      <button class="main__button">
-        <a
-          class="main__button-link"
-          href="subpages/contact-grupp27.html"
-          alt="Kontakt"
-          >Kontakt</a
-        >
-      </button>
+          <!--Kompetenser-->
+          <h2 class="main__subtitle">Kompetenser</h2>
+          <a class="index__link" href="subpages/competencies-grupp27.html"
+            >Kompetenser</a
+          >
 
+          <!--Projekt-->
+          <h2 class="main__subtitle">Projekt</h2>
+          <a class="index__link" href="subpages/projects-grupp27.html"
+            >Projekt</a
+          >
+
+          <!--Utbildning-->
+          <h2 class="main__subtitle">Utbildning</h2>
+          <a class="index__link" href="subpages/education-grupp27.html"
+            >Utbildning</a
+          >
+
+          <!--Kontakt-->
+          <h2 class="main__subtitle">Kontakt</h2>
+          <a class="index__link" href="subpages/contact-grupp27.html"
+            >Kontakt</a
+          >
+
+          <!--Mitt CV-->
+          <h2 class="main__subtitle">Mitt CV</h2>
+          <button class="main__button">
+            <a
+              class="main__button-link"
+              href="subpages/resume-grupp27.html"
+              alt="CV"
+              >Cv</a
+            >
+          </button>
+        </main>
+        <footer class="footer">
+          <p class="footer__text">
+            &copy; 2026 Barbara Millicent Roberts & Grupp 27
+          </p>
+        </footer>
+      </body>
       <!--Mitt CV-->
-      <h2 class="main__subtitle">Mitt CV</h2>
-      <button class="main__button">
-        <a
-          class="main__button-link"
-          href="subpages/resume-grupp27.html"
-          alt="CV"
-          >Cv</a
-        >
-      </button>
+      <h2 class="main__subtitle">CV</h2>
+      <a class="index__link" href="subpages/resume-grupp27.html">CV</a>
     </main>
+
     <footer class="footer">
       <p class="footer__text">
         &copy; 2026 Barbara Millicent Roberts & Grupp 27
