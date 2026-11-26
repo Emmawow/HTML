@@ -26,6 +26,11 @@ function printError($field, $error) {
     <header class="header">
       <!--Huvudmeny-->
       <nav class="nav" aria-label="Huvudmeny">
+      <img
+        class="barbie-logo"
+        src="images/Logo_barbie.png"
+        alt="Barbies Logga"
+      />
         <ul class="nav__list">
           <li class="nav__item"><a class="nav__link" href="index-grupp27.html">Hem</a></li>
           <li class="nav__item"><a class="nav__link" href="subpages/about-grupp27.html">Om mig</a></li>
@@ -54,6 +59,7 @@ function printError($field, $error) {
                 <p>Namn: <?php echo htmlspecialchars($name, ENT_QUOTES, 'UTF-8'); ?></p>
                 <p>E-post: <?php echo htmlspecialchars($email, ENT_QUOTES, 'UTF-8'); ?></p>
                 <p>Meddelande: <?php echo htmlspecialchars($message, ENT_QUOTES, 'UTF-8'); ?></p>
+
             <?php endif; ?>
             </section>
      </main>

@@ -16,6 +16,11 @@
   <body>
     <a class="skip__link" href="#main">Hoppa till innehåll!</a>
 
+    <img
+      class="barbie-logo"
+      src="../images/Logo_barbie.png"
+      alt="Barbies Logga"
+    />
     <header class="header">
       <!--Huvudmeny-->
       <nav class="nav" aria-label="Huvudmeny">
@@ -49,13 +54,14 @@
     </header>
 
     <main class="main" id="main">
+      <!--Js krok-->
       <!-- Ej kodat i JS, ska skriva ut nedan info genom PDF -->
       <button
         class="resume__button"
         type="button"
         data-js-action="print-resume"
       >
-        Skriv ut CV
+        Skriv ut CV (Funkar inte nu men till framtida bruk)
       </button>
       <!-- Skriver ut konfirmationen när det är utskrivet (i teorin) -->
       <p data-js-target="resume-confirmation" role="status"></p>
@@ -187,7 +193,6 @@
         <section class="resume__section" aria-labelledby="languages-heading">
           <h2 class="resume__heading" id="languages-heading">Språk</h2>
           <dl class="languages">
-            <!-- Dictionary list, kan ändras! -->
             <dt class="languages__term">Engelska</dt>
             <dd class="languages__desc">Modersmål</dd>
 
