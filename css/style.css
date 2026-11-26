@@ -13,15 +13,19 @@
 .nav__link {
 }
 .nav__list {
+  display: flex;
+  gap: 10px; /*Mellanrum mellan alla länkar*/
+  flex-direction: column; /*Gör att det ligger lodrätt*/
+  padding: 0; /*Tar bort mellanrummet till vänster*/
 }
 .main {
 }
-.main__button-link {
-}
-.main__img {
+.barbie-logo {
+  display: block;
   width: 100%;
   max-width: 240px;
   height: auto;
+  margin-left: 0;
 }
 .main__title {
 }
@@ -30,12 +34,6 @@
 .footer {
 }
 .footer__text {
-}
-
-/* INDEX */
-.index__button {
-}
-.index__button-link {
 }
 
 /* ABOUT */
@@ -97,6 +95,10 @@
 .contact__link-linkedin {
 }
 .contact__list {
+  display: flex;
+  gap: 10px; /*Mellanrum mellan alla länkar*/
+  flex-direction: column; /*Gör att det ligger lodrätt*/
+  padding: 0; /*Tar bort mellanrummet till vänster*/
 }
 .contact__list-item {
 }
